@@ -1,5 +1,6 @@
 import React from 'react';
-import CreatePost from './CreatePost';
+import CreateChirp from './CreateChirp';
+import ListChirps from './ListChirps';
 
 function App() {
   return (
@@ -7,9 +8,10 @@ function App() {
       <h1>Chitter</h1>
       <hr />
       <h2>Create Chirp</h2>
-      <CreatePost />
+      <CreateChirp />
       <hr />
       <h2>Chirps</h2>
+      <ListChirps />
     </div>
   );
 }
