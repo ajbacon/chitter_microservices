@@ -1,4 +1,5 @@
 import React from 'react';
+import CreatePost from './CreatePost';
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <h1>Chitter</h1>
       <hr />
       <h2>Create Chirp</h2>
+      <CreatePost />
       <hr />
       <h2>Chirps</h2>
     </div>
