@@ -4,7 +4,7 @@ import ListChirps from './ListChirps';
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <h1>Chitter</h1>
       <hr />
       <h2>Create Chirp</h2>

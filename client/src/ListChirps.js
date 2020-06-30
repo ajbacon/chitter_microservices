@@ -16,8 +16,17 @@ const ListChirps = () => {
   const renderChirps = () => {
     return Object.values(chirps).map((chirp) => {
       return (
-        <div key={chirp.id}>
-          <div>{chirp.title}</div>
+        <div
+          className='card'
+          key={chirp.id}
+          style={{
+            width: '40%',
+            marginBottom: '20px',
+            padding: '10px',
+            borderRadius: '10px',
+          }}
+        >
+          <h4>{chirp.title}</h4>
         </div>
       );
     });
