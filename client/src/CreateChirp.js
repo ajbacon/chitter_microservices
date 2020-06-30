@@ -22,8 +22,10 @@ function CreateChirp() {
           type='text'
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          className='form-control'
+          style={{ width: '50%', borderRadius: '10px', marginBottom: '10px' }}
         />
-        <button>Submit</button>
+        <button className='btn btn-primary btn-sm'>Submit</button>
       </form>
     </div>
   );

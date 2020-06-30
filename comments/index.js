@@ -9,6 +9,11 @@ app.use(cors());
 
 commentsByPostId = {};
 
+// test route to get all comments
+app.get('/comments', (req, res) => {
+  res.send(commentsByPostId);
+});
+
 app.get('/posts/:id/comments', (req, res) => {
   res.send(commentsByPostId[req.params.id]);
 });

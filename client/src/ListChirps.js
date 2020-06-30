@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import CreateComment from './CreateComment';
 
 const ListChirps = () => {
   const [chirps, setChirps] = useState({});
@@ -26,7 +27,9 @@ const ListChirps = () => {
             borderRadius: '10px',
           }}
         >
-          <h4>{chirp.title}</h4>
+          <h5>{chirp.title}</h5>
+          <div>Comments:</div>
+          <CreateComment chirpId={chirp.id} />
         </div>
       );
     });
